@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<title>BoaVida Hotel</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+</head>
+<body onload="mostraParque();">
+<div class="container">
+	<div class="header clearfix">
+		<h2 class="text-center">BoaVida Hotel</h2>
+	</div>
+
+	<div class="jumbotron">
+		<form id="formulario">
+		<div id="aviso"></div>
+			<div class="form-group">
+				<label>Nome do Cliente:</label>
+				<input type="text" class="form-control" id="nomeCliente" placeholder="Escreva o seu nome.">
+			</div>
+			<div class="form-group">
+				<label>Email:</label>
+				<input type="text" class="form-control" id="email" placeholder="Escreva o seu email.">
+			</div>
+			<div class="form-group">
+				<label>Tipo de Alojamento(T1 ou T2):</label><br>
+				<select class="form-select" id="tipoAlojamento" placeholder="Selecione o tipo de alojamento.">
+  					<option selected>Selecione o Tipo de Alojamento</option>
+					<option value="1">T1 - 40€</option>
+					<option value="2">T2 - 60€</option>
+				</select>
+			</div>
+            <button type="submit" class="btn btn-primary">Confirmar estadia</button>
+		</form>
+	</div>
+	<div class="row marketing">
+		<div class="col-lg-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Nome do Cliente</th>
+					<th>Email</th>
+					<th>Tipo de Alojamento</th>
+					<th>Data de Entrada</th>
+				</tr>
+			</thead>
+			<tbody id="resultados">
+			</tbody>
+		</table>
+		</div>
+	</div>
+</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/project.js"></script>
+</body>
+</html>
